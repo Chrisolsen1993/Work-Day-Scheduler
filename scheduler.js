@@ -4,16 +4,18 @@ timeInterval = setInterval(function () {
   }, 1000);
   var currentTime = moment().hours();
   console.log(currentTime);
-  var timesArray = ["8", "9", "10", "11", "12", "13", "14", "15", "16", "17"]
+  var timesArray = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+  console.log(timesArray);
+  console.log(timesArray[1]);
  for ( var i =0; i<timesArray.length; i++){
    if (currentTime > timesArray[i]){
      //so we are in the future
-     $(".time-block").addClass("future")
+     $("#8").addClass("future")
    } else if (currentTime === timesArray[i]){
-    $(".time-block").addClass("present")
+    $("#8").addClass("present")
    }
    else{
-    $(".time-block").addClass("past")
+    $("#8").addClass("past")
    }
  }
 // var currentTimeUnix = moment().unix() // turn in to unix
@@ -25,3 +27,5 @@ timeInterval = setInterval(function () {
 //     // make green
 //   }
 // }
+var mo = parseInt("10")
+console.log(mo)
